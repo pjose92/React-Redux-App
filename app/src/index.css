@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  color: black;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.ui.card {
+  width: 320px;
+  height: 180px;
+  flex-grow: 0;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  background: #f1f1f0;
+  margin: 20px !important;
+  padding: 30px 1px 5px 1px;
+  box-shadow: 10px 15px 12px rgba(0, 0, 0, 0.22);
+
+}
+
+.ui.pagination.menu{
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #faf8f8;
+  border: 1px solid black;
+  opacity: 0.8;  
+}
