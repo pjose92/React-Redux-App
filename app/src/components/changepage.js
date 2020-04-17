@@ -5,7 +5,7 @@ const ChangePage = (props) => {
     return (
         <Pagination 
             defaultActivePage={1}
-            totalPages={12}
+            totalPages={10}
             onPageChange={(data) => props.handlePageChange(data.activePage)
             }
         />

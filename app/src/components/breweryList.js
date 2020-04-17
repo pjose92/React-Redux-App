@@ -38,7 +38,7 @@ const BreweryList = (props) => {
 }
 
 const mapStateToProps = state => {
-    console.log('initial', state)
+    // console.log('initial', state)
     return {
         brewery: state.brewery,
         url: state.url,
@@ -47,8 +47,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(
-    mapStateToProps, {
-        getBrewery, pageChange
-    }
-)(BreweryList);
+export default connect(mapStateToProps, {getBrewery, pageChange}) (BreweryList);

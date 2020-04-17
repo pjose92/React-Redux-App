@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, Icon } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
 const BreweryCard = (props) => {
     const {name, brewery_type, city, state, country, website_url } = props.item

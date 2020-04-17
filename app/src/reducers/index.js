@@ -1,12 +1,13 @@
 import { PAGE_CHANGE, FETCHING_BREWERY_START, FETCHING_BREWERY_SUCCESS, FETCHING_BREWERY_FAILURE } from "../actions"
 
-const intialState = {
+const initialState = {
     brewery: [],
-    url: 'https://api.openbrewerydb.org/breweries?page=1&per_page=12',
-    error: 'error, error!'
+    url: 'https://api.openbrewerydb.org/breweries',
+    isFetching: false,
+    error: ''
 }
 
-export const reducer = (state=intialState, action) => {
+export const reducer = (state=initialState, action) => {
     switch (action.type) {
         case FETCHING_BREWERY_START:
             return {
@@ -29,7 +30,7 @@ export const reducer = (state=intialState, action) => {
         case PAGE_CHANGE:
             return {
                 ...state,
-                url: `https://api.openbrewerydb.org/breweries?page=${action.payload}&per_page=12`
+                url: `https://api.openbrewerydb.org/breweries?page=${action.payload}&per_page=25`
         }
          default:
              return state;            
